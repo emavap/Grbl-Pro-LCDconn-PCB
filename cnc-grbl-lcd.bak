@@ -1,0 +1,344 @@
+EESchema Schematic File Version 2
+LIBS:valves
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:cnc-grbl-lcd-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L +5V #PWR01
+U 1 1 57A3BAF0
+P 5000 1725
+F 0 "#PWR01" H 5000 1575 50  0001 C CNN
+F 1 "+5V" H 5000 1865 50  0000 C CNN
+F 2 "" H 5000 1725 60  0000 C CNN
+F 3 "" H 5000 1725 60  0000 C CNN
+	1    5000 1725
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C3
+U 1 1 57A3BD3C
+P 4575 2075
+F 0 "C3" H 4600 2175 50  0000 L CNN
+F 1 "3.3nF" H 4600 1975 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 4613 1925 50  0001 C CNN
+F 3 "" H 4575 2075 50  0000 C CNN
+	1    4575 2075
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C1
+U 1 1 57A3C1B9
+P 4300 2025
+F 0 "C1" H 4200 2100 50  0000 L CNN
+F 1 "0.1uF" V 4425 1925 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 4300 2025 50  0001 C CNN
+F 3 "" H 4300 2025 50  0000 C CNN
+	1    4300 2025
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 57A3C753
+P 4575 2375
+F 0 "#PWR02" H 4575 2125 50  0001 C CNN
+F 1 "GND" H 4575 2225 50  0000 C CNN
+F 2 "" H 4575 2375 50  0000 C CNN
+F 3 "" H 4575 2375 50  0000 C CNN
+	1    4575 2375
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X03 P1
+U 1 1 57A4097D
+P 4525 4075
+F 0 "P1" H 4525 4275 50  0000 C CNN
+F 1 "ICSP-Main" H 4525 3875 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 4525 2875 50  0001 C CNN
+F 3 "" H 4525 2875 50  0000 C CNN
+	1    4525 4075
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR03
+U 1 1 57A41B8F
+P 4875 3825
+F 0 "#PWR03" H 4875 3675 50  0001 C CNN
+F 1 "+5V" H 4875 3965 50  0000 C CNN
+F 2 "" H 4875 3825 60  0000 C CNN
+F 3 "" H 4875 3825 60  0000 C CNN
+	1    4875 3825
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 57A41C30
+P 4875 4300
+F 0 "#PWR04" H 4875 4050 50  0001 C CNN
+F 1 "GND" H 4875 4150 50  0000 C CNN
+F 2 "" H 4875 4300 50  0000 C CNN
+F 3 "" H 4875 4300 50  0000 C CNN
+	1    4875 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X03 P11
+U 1 1 57A85C9F
+P 4550 3225
+F 0 "P11" H 4550 3425 50  0000 C CNN
+F 1 "CTR" H 4550 3025 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 4550 2025 50  0001 C CNN
+F 3 "" H 4550 2025 50  0000 C CNN
+	1    4550 3225
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 57A86992
+P 4950 3300
+F 0 "#PWR05" H 4950 3050 50  0001 C CNN
+F 1 "GND" H 4950 3150 50  0000 C CNN
+F 2 "" H 4950 3300 50  0000 C CNN
+F 3 "" H 4950 3300 50  0000 C CNN
+	1    4950 3300
+	1    0    0    -1  
+$EndComp
+Text GLabel 3850 4725 0    47   Input ~ 0
+TX
+Text GLabel 3850 4825 0    47   Input ~ 0
+RX
+$Comp
+L GND #PWR06
+U 1 1 57BCD8E1
+P 4675 5900
+F 0 "#PWR06" H 4675 5650 50  0001 C CNN
+F 1 "GND" H 4675 5750 50  0000 C CNN
+F 2 "" H 4675 5900 50  0000 C CNN
+F 3 "" H 4675 5900 50  0000 C CNN
+	1    4675 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X04 P12
+U 1 1 57BCE896
+P 4425 5650
+F 0 "P12" H 4425 5900 50  0000 C CNN
+F 1 "CON" H 4425 5400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x04" H 4425 4450 50  0001 C CNN
+F 3 "" H 4425 4450 50  0000 C CNN
+	1    4425 5650
+	1    0    0    -1  
+$EndComp
+Text GLabel 4675 4825 2    47   Input ~ 0
+RX_FTDI
+Text GLabel 4675 4725 2    47   Input ~ 0
+TX_FTDI
+$Comp
+L CONN_02X03 P13
+U 1 1 57BDA6B9
+P 4300 4825
+F 0 "P13" H 4300 5025 50  0000 C CNN
+F 1 "TRX" H 4300 4625 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 4300 3625 50  0001 C CNN
+F 3 "" H 4300 3625 50  0000 C CNN
+	1    4300 4825
+	1    0    0    -1  
+$EndComp
+Text GLabel 4675 4925 2    47   Input ~ 0
+reset-ftdi
+Text GLabel 3850 4925 0    47   Input ~ 0
+reset
+$Comp
+L +5V #PWR07
+U 1 1 57BD9381
+P 6950 4650
+F 0 "#PWR07" H 6950 4500 50  0001 C CNN
+F 1 "+5V" H 6950 4790 50  0000 C CNN
+F 2 "" H 6950 4650 60  0000 C CNN
+F 3 "" H 6950 4650 60  0000 C CNN
+	1    6950 4650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4275 3975
+NoConn ~ 4275 4075
+NoConn ~ 4275 4175
+NoConn ~ 4775 4075
+$Comp
+L GND #PWR08
+U 1 1 57BDA64B
+P 5750 4850
+F 0 "#PWR08" H 5750 4600 50  0001 C CNN
+F 1 "GND" H 5750 4700 50  0000 C CNN
+F 2 "" H 5750 4850 50  0000 C CNN
+F 3 "" H 5750 4850 50  0000 C CNN
+	1    5750 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X06 P3
+U 1 1 57BD8AAD
+P 6125 4500
+F 0 "P3" H 6125 4800 50  0000 C CNN
+F 1 "EXP1" H 6125 4200 50  0000 C TNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x06" H 6125 3300 50  0001 C CNN
+F 3 "" H 6125 3300 50  0000 C CNN
+	1    6125 4500
+	1    0    0    -1  
+$EndComp
+Text GLabel 5775 4250 0    47   Input ~ 0
+TX
+Text GLabel 5775 4350 0    47   Input ~ 0
+RX
+Text GLabel 5775 4450 0    47   Input ~ 0
+reset
+Text GLabel 6475 4250 2    47   Input ~ 0
+TX_FTDI
+Text GLabel 6475 4350 2    47   Input ~ 0
+RX_FTDI
+Text GLabel 6475 4450 2    47   Input ~ 0
+reset-ftdi
+NoConn ~ 4175 5800
+NoConn ~ 4175 5700
+NoConn ~ 4175 5600
+NoConn ~ 4175 5500
+Text GLabel 4200 3125 0    47   Input ~ 0
+RST
+Text GLabel 4200 3225 0    47   Input ~ 0
+HLD
+Text GLabel 4200 3325 0    47   Input ~ 0
+STR
+Wire Wire Line
+	4200 3325 4300 3325
+Wire Wire Line
+	4300 3225 4200 3225
+Wire Wire Line
+	4200 3125 4300 3125
+Wire Wire Line
+	5000 1925 5000 1725
+Wire Wire Line
+	5875 4750 5750 4750
+Wire Wire Line
+	5750 4750 5750 4850
+Wire Wire Line
+	4550 4925 4675 4925
+Wire Wire Line
+	3850 4925 4050 4925
+Wire Wire Line
+	4675 4825 4550 4825
+Wire Wire Line
+	4550 4725 4675 4725
+Connection ~ 4675 5600
+Connection ~ 4675 5700
+Connection ~ 4675 5800
+Wire Wire Line
+	4675 5500 4675 5900
+Wire Wire Line
+	3850 4825 4050 4825
+Wire Wire Line
+	3850 4725 4050 4725
+Connection ~ 4800 3225
+Wire Wire Line
+	4950 3225 4950 3300
+Wire Wire Line
+	4800 3225 4950 3225
+Wire Wire Line
+	4800 3125 4800 3325
+Wire Wire Line
+	4875 3975 4875 3825
+Wire Wire Line
+	4775 3975 4875 3975
+Wire Wire Line
+	4875 4175 4875 4300
+Wire Wire Line
+	4775 4175 4875 4175
+Connection ~ 4575 2275
+Wire Wire Line
+	4575 2225 4575 2375
+Wire Wire Line
+	4300 2275 4575 2275
+Wire Wire Line
+	4300 2125 4300 2275
+Connection ~ 4575 1925
+Wire Wire Line
+	4300 1925 5000 1925
+Text GLabel 5775 4550 0    47   Input ~ 0
+RST
+Text GLabel 6475 4550 2    47   Input ~ 0
+HLD
+Text GLabel 5775 4650 0    47   Input ~ 0
+STR
+Wire Wire Line
+	6375 4250 6475 4250
+Wire Wire Line
+	5875 4250 5775 4250
+Wire Wire Line
+	5775 4350 5875 4350
+Wire Wire Line
+	5875 4450 5775 4450
+Wire Wire Line
+	5775 4550 5875 4550
+Wire Wire Line
+	5875 4650 5775 4650
+Wire Wire Line
+	6375 4550 6475 4550
+Wire Wire Line
+	6475 4450 6375 4450
+Wire Wire Line
+	6375 4350 6475 4350
+Wire Wire Line
+	6950 4650 6375 4650
+$Comp
+L GND #PWR09
+U 1 1 588CD52D
+P 6525 4850
+F 0 "#PWR09" H 6525 4600 50  0001 C CNN
+F 1 "GND" H 6525 4700 50  0000 C CNN
+F 2 "" H 6525 4850 50  0000 C CNN
+F 3 "" H 6525 4850 50  0000 C CNN
+	1    6525 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6525 4750 6525 4850
+Wire Wire Line
+	6525 4750 6375 4750
+$EndSCHEMATC
