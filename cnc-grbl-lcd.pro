@@ -1,4 +1,4 @@
-update=Thu 26 Jan 2017 01:14:38 PM CET
+update=Sun 17 Dec 2017 11:47:22 AM CET
 version=1
 last_client=kicad
 [cvpcb]
@@ -68,3 +68,7 @@ LibName26=siliconi
 LibName27=opto
 LibName28=atmel
 LibName29=contrib
+LibName30=libraries/ua78mxx
+LibName31=libraries/pololu_a4988
+LibName32=libraries/ftdi
+LibName33=libraries/stb60nf06lt4

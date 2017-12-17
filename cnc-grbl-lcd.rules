@@ -1,5 +1,5 @@
 
-(rules PCB cnc-grbl-lcd
+(rules PCB cnc-grbl
   (snap_angle 
     fortyfive_degree
   )
@@ -11,18 +11,18 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 150)
+    (start_pass_no 947)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 2.4)
+      (against_preferred_direction_trace_costs 2.8)
     )
     (layer_rule B.Cu
       (active on)
       (preferred_direction vertical)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 1.7)
+      (against_preferred_direction_trace_costs 1.6)
     )
   )
   (rule
@@ -91,8 +91,10 @@
     )
   )
   (class "kicad_default"
-    GND reset +5V "TX_FTDI" "RX_FTDI" RX TX "reset-ftdi"
-    RST HLD STR
+    GND "Net-(C2-Pad1)" reset "Net-(C7-Pad1)" "Net-(C8-Pad1)" MISO +5V MOSI
+    "Net-(IC1-Pad30)" "Net-(IC1-Pad31)" SCK "TX_FTDI" "RX_FTDI" LCDRS LCD4 LCD5
+    LCD6 LCD7 RX TX "SD_CSEL" "SD_DET" "BTN_EN1" "BTN_EN2"
+    "BTN_enc" Beeper "reset-ftdi" LCDE
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
